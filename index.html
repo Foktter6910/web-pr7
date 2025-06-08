@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Веб-шрифти</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Локальний шрифт -->
+  <style>
+    @font-face {
+      font-family: 'CafeteriaFont';
+      src: url('fonts/CafeteriaFont.woff2') format('woff2'),
+           url('fonts/CafeteriaFont.woff') format('woff');
+      font-display: swap;
+    }
+
+    :root {
+      --font-primary: 'Roboto', sans-serif;
+      --font-heading: 'Playfair Display', serif;
+      --font-special: 'CafeteriaFont', cursive;
+    }
+
+    body {
+      font-family: var(--font-primary);
+      line-height: 1.6;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      background: #fefefe;
+      color: #333;
+    }
+
+    h1, h2, h3 {
+      font-family: var(--font-heading);
+      margin-top: 1.5em;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 1em;
+    }
+
+    blockquote {
+      font-style: italic;
+      color: #666;
+      border-left: 4px solid #ccc;
+      padding-left: 1em;
+      margin: 1.5em 0;
+    }
+
+    ul {
+      margin-left: 1.2em;
+      list-style: disc;
+    }
+
+    em {
+      font-style: italic;
+      color: #d2691e;
+    }
+
+    strong {
+      font-weight: 700;
+      color: #333;
+    }
+
+    .special-text {
+      font-family: var(--font-special);
+      font-size: 1.4rem;
+      color: #7b3f00;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Кавʼярня <span class="special-text">Café Aroma</span></h1>
+
+  <p>Ласкаво просимо до нашої кавʼярні, де кожна чашка <em>свіжозвареної</em> кави — це маленьке мистецтво. Тут ви знайдете найкращі напої та домашні десерти міста.</p>
+
+  <h2>Наше меню</h2>
+
+  <ul>
+    <li><strong>Лате</strong> — ніжний напій на основі еспресо та молока.</li>
+    <li><strong>Капучино</strong> — класика з пишною молочною піною.</li>
+    <li><strong>Чізкейк</strong> — ніжний десерт з вершковим смаком.</li>
+  </ul>
+
+  <h3>Про каву</h3>
+  <p>Кава у нас обсмажується <strong>власноруч</strong> і має сертифікати органічного походження.</p>
+
+  <blockquote>
+    «Кава — це не напій, а стан душі.»
+  </blockquote>
+
+  <p class="special-text">Завітайте на дегустацію нових сортів!</p>
+
+</body>
+</html>
